@@ -1,460 +1,83 @@
-<!DOCTYPE html>
+Rotterdam, Netherlands  ·  MSc Industrial Ecology
 
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Salih Ali — Industrial Ecologist</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+Salih Ali —
+systems thinker,
+engineer.
+Mechanical engineering background. Currently studying how industrial systems can transition toward sustainability — energy, materials, institutions.
 
-```
-:root {
-  --bg: #f5f2ec;
-  --ink: #1a1814;
-  --muted: #7a7468;
-  --accent: #2d5a3d;
-  --accent-light: #e8f0ea;
-  --rule: #d6d0c4;
-  --mono: 'DM Mono', monospace;
-  --serif: 'Fraunces', Georgia, serif;
-}
+↗ GitHub
+↗ LinkedIn
+✉ Email
+About
 
-html { scroll-behavior: smooth; }
+Before the MSc I worked in gas turbine efficiency — where I developed an instinct for system-level optimisation at the component level. The Industrial Ecology programme has pushed that instinct outward: from components to industrial systems, and from optimisation to transition.
 
-body {
-  background: var(--bg);
-  color: var(--ink);
-  font-family: var(--mono);
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 1.7;
-  min-height: 100vh;
-}
+My thesis interest sits at the intersection of technical interventions and institutional mechanisms — specifically, what conditions allow ecological gains to actually persist rather than being absorbed or reversed.
 
-/* --- GRAIN OVERLAY --- */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 999;
-  opacity: 0.5;
-}
+I'm open to internships and part-time technical roles in energy, sustainability consulting, maritime, or chemicals where an engineering background and a systems lens are useful.
 
-/* --- LAYOUT --- */
-.container {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 28px;
-}
+Projects
 
-/* --- HEADER --- */
-header {
-  padding: 72px 0 56px;
-  border-bottom: 1px solid var(--rule);
-  animation: fadeUp 0.8s ease both;
-}
+2025–26
+Saba Island 100% Renewable Transition ↗
 
-.label {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 20px;
-}
+Group project (4 people). Individual contributions: built the RAMP stochastic demand model from scratch (50 Monte Carlo runs, 5 user categories, 9,003 MWh/yr median); independently corrected and ran the Calliope energy optimisation model (4.72 MW solar, 0.577 MW wind, 9.8 MWh battery); caught a capacity mismatch between Calliope outputs and the financial model before submission. Full system stress-tested against a 5-day hurricane blackout scenario.
 
-h1 {
-  font-family: var(--serif);
-  font-size: clamp(2.8rem, 7vw, 4.2rem);
-  font-weight: 300;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-  margin-bottom: 24px;
-}
+Python
+RAMP
+Calliope
+Energy systems
+2025–26
+RECLAIM × Zorluteks — Circular Retrofit Assessment
 
-h1 em {
-  font-style: italic;
-  color: var(--accent);
-}
+Assessed long-term viability of a digital circular retrofit strategy for a Turkish textile manufacturer. Contributed risk framework and three commercialisation routes including sustainability-linked finance.
 
-.tagline {
-  font-size: 14px;
-  color: var(--muted);
-  max-width: 460px;
-  margin-bottom: 32px;
-}
+Circular economy
+Strategy
+SLL finance
+2025–26
+PolyCycle Park — Industrial Symbiosis Modelling
 
-.header-links {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+Built energy and material balance diagrams (Linny-R) for EO/EG and PET plants in an industrial symbiosis park scenario.
 
-.pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
-  border: 1px solid var(--rule);
-  border-radius: 2px;
-  font-size: 12px;
-  color: var(--muted);
-  text-decoration: none;
-  transition: border-color 0.2s, color 0.2s, background 0.2s;
-}
+Linny-R
+MFA
+Industrial symbiosis
+2025–26
+Climate & Carbon Modelling — Canada & Global ↗
 
-.pill:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  background: var(--accent-light);
-}
+Two-part analysis: (1) Canada temperature trend analysis using Berkeley Earth data — polar amplification, radiative forcing, and 2050 projection with R²=0.89 regression. (2) Six-pool dynamic carbon model (atmosphere, land, ocean) simulating BAU vs mitigation scenarios to 2100 using a Runge–Kutta solver; sensitivity analysis identified ocean uptake rate as dominant uncertainty (±15%).
 
-/* --- SECTIONS --- */
-section {
-  padding: 56px 0;
-  border-bottom: 1px solid var(--rule);
-  animation: fadeUp 0.8s ease both;
-}
+Python
+Climate modelling
+Carbon cycle
+NOAA data
+Berkeley Earth
+Skills
 
-section:last-of-type { border-bottom: none; }
+Modelling
 
-.section-label {
-  font-size: 11px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 28px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
+Python / Jupyter
+RAMP (stochastic)
+Calliope (optimisation)
+Linny-R (MFA)
+Methods
 
-.section-label::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--rule);
-}
+Life Cycle Assessment
+Material Flow Analysis
+Research methods
+Policy analysis
+Domains
 
-/* --- ABOUT --- */
-.about-text p {
-  color: var(--ink);
-  margin-bottom: 14px;
-  max-width: 580px;
-}
+Energy transitions
+Circular economy
+Industrial ecology
+Gas turbines / thermal
+Contact
 
-.about-text p:last-child { margin-bottom: 0; }
+Open to internship and part-time opportunities in energy, sustainability, and related technical fields.
 
-/* --- PROJECTS --- */
-.projects { display: flex; flex-direction: column; gap: 24px; }
-
-.project {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 20px;
-  padding: 20px;
-  border: 1px solid var(--rule);
-  border-radius: 2px;
-  transition: border-color 0.2s, background 0.2s;
-}
-
-.project:hover {
-  border-color: var(--accent);
-  background: var(--accent-light);
-}
-
-.project-year {
-  font-size: 11px;
-  color: var(--muted);
-  padding-top: 3px;
-  letter-spacing: 0.05em;
-}
-
-.project-title {
-  font-family: var(--serif);
-  font-size: 1.05rem;
-  font-weight: 400;
-  margin-bottom: 6px;
-}
-
-.project-title-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.project-title-link:hover .project-title {
-  color: var(--accent);
-}
-
-.project-desc {
-  font-size: 13px;
-  color: var(--muted);
-  margin-bottom: 10px;
-}
-
-.tags {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.tag {
-  font-size: 11px;
-  padding: 2px 8px;
-  background: var(--bg);
-  border: 1px solid var(--rule);
-  border-radius: 2px;
-  color: var(--muted);
-  letter-spacing: 0.04em;
-}
-
-/* --- SKILLS --- */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 12px;
-}
-
-.skill-group { }
-
-.skill-group-title {
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 8px;
-}
-
-.skill-list {
-  font-size: 13px;
-  color: var(--muted);
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.skill-list li::before {
-  content: '→ ';
-  color: var(--rule);
-}
-
-/* --- CONTACT --- */
-.contact-row {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.contact-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--ink);
-  text-decoration: none;
-  font-size: 13px;
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: 2px;
-  transition: border-color 0.2s, color 0.2s;
-}
-
-.contact-link:hover {
-  color: var(--accent);
-  border-color: var(--accent);
-}
-
-/* --- FOOTER --- */
-footer {
-  padding: 32px 0;
-  font-size: 12px;
-  color: var(--muted);
-}
-
-/* --- ANIMATIONS --- */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(18px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-header { animation-delay: 0s; }
-section:nth-of-type(1) { animation-delay: 0.1s; }
-section:nth-of-type(2) { animation-delay: 0.2s; }
-section:nth-of-type(3) { animation-delay: 0.3s; }
-section:nth-of-type(4) { animation-delay: 0.4s; }
-
-/* --- MOBILE --- */
-@media (max-width: 520px) {
-  .project { grid-template-columns: 1fr; gap: 8px; }
-  .project-year { padding-top: 0; }
-  h1 { font-size: 2.4rem; }
-}
-```
-
-  </style>
-</head>
-<body>
-  <div class="container">
-
-```
-<header>
-  <p class="label">Rotterdam, Netherlands &nbsp;·&nbsp; MSc Industrial Ecology</p>
-  <h1>Salih Ali —<br><em>systems thinker,</em><br>engineer.</h1>
-  <p class="tagline">
-    Mechanical engineering background. Currently studying how industrial systems can transition toward sustainability — energy, materials, institutions.
-  </p>
-  <div class="header-links">
-    <a class="pill" href="https://github.com/salimoali" target="_blank">↗ GitHub</a>
-    <a class="pill" href="https://www.linkedin.com/in/salimoali" target="_blank">↗ LinkedIn</a>
-    <a class="pill" href="mailto:salimoali2026@gmail.com">✉ Email</a>
-  </div>
-</header>
-
-<section>
-  <p class="section-label">About</p>
-  <div class="about-text">
-    <p>
-      Before the MSc I worked in gas turbine efficiency — where I developed an instinct for system-level optimisation at the component level. The Industrial Ecology programme has pushed that instinct outward: from components to industrial systems, and from optimisation to transition.
-    </p>
-    <p>
-      My thesis interest sits at the intersection of technical interventions and institutional mechanisms — specifically, what conditions allow ecological gains to actually persist rather than being absorbed or reversed.
-    </p>
-    <p>
-      I'm open to internships and part-time technical roles in energy, sustainability consulting, maritime, or chemicals where an engineering background and a systems lens are useful.
-    </p>
-  </div>
-</section>
-
-<section>
-  <p class="section-label">Projects</p>
-  <div class="projects">
-
-    <div class="project">
-      <span class="project-year">2025–26</span>
-      <div>
-        <a class="project-title-link" href="https://github.com/salimoali/saba-energy-transition" target="_blank">
-          <p class="project-title">Saba Island 100% Renewable Transition ↗</p>
-        </a>
-        <p class="project-desc">
-          Stochastic demand modelling (RAMP, 50 Monte Carlo runs, 5 user categories, 9,003 MWh/yr median, 2.21 MW peak) feeding into Calliope energy optimisation (4.72 MW solar, 0.577 MW wind, 9.8 MWh battery). Stress-tested against a 5-day hurricane blackout scenario. Financial model: €8.48M CAPEX, 9-year payback, 12.31% IRR. Independently corrected YAML configs, fixed capacity scaling, and caught a capacity mismatch between Calliope outputs and the financial model before submission.
-        </p>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">RAMP</span>
-          <span class="tag">Calliope</span>
-          <span class="tag">Energy systems</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="project">
-      <span class="project-year">2025–26</span>
-      <div>
-        <p class="project-title">RECLAIM × Zorluteks — Circular Retrofit Assessment</p>
-        <p class="project-desc">
-          Assessed long-term viability of a digital circular retrofit strategy for a Turkish textile manufacturer. Contributed risk framework and three commercialisation routes including sustainability-linked finance.
-        </p>
-        <div class="tags">
-          <span class="tag">Circular economy</span>
-          <span class="tag">Strategy</span>
-          <span class="tag">SLL finance</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="project">
-      <span class="project-year">2025–26</span>
-      <div>
-        <p class="project-title">PolyCycle Park — Industrial Symbiosis Modelling</p>
-        <p class="project-desc">
-          Built energy and material balance diagrams (Linny-R) for EO/EG and PET plants in an industrial symbiosis park scenario.
-        </p>
-        <div class="tags">
-          <span class="tag">Linny-R</span>
-          <span class="tag">MFA</span>
-          <span class="tag">Industrial symbiosis</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="project">
-      <span class="project-year">2025–26</span>
-      <div>
-        <a class="project-title-link" href="https://github.com/salimoali/climate-modelling-python" target="_blank">
-          <p class="project-title">Climate & Carbon Modelling — Canada & Global ↗</p>
-        </a>
-        <p class="project-desc">
-          Two-part analysis: (1) Canada temperature trend analysis using Berkeley Earth data — polar amplification, radiative forcing, and 2050 projection with R²=0.89 regression. (2) Six-pool dynamic carbon model (atmosphere, land, ocean) simulating BAU vs mitigation scenarios to 2100 using a Runge–Kutta solver; sensitivity analysis identified ocean uptake rate as dominant uncertainty (±15%).
-        </p>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Climate modelling</span>
-          <span class="tag">Carbon cycle</span>
-          <span class="tag">NOAA data</span>
-          <span class="tag">Berkeley Earth</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <p class="section-label">Skills</p>
-  <div class="skills-grid">
-    <div class="skill-group">
-      <p class="skill-group-title">Modelling</p>
-      <ul class="skill-list">
-        <li>Python / Jupyter</li>
-        <li>RAMP (stochastic)</li>
-        <li>Calliope (optimisation)</li>
-        <li>Linny-R (MFA)</li>
-      </ul>
-    </div>
-    <div class="skill-group">
-      <p class="skill-group-title">Methods</p>
-      <ul class="skill-list">
-        <li>Life Cycle Assessment</li>
-        <li>Material Flow Analysis</li>
-        <li>Research methods</li>
-        <li>Policy analysis</li>
-      </ul>
-    </div>
-    <div class="skill-group">
-      <p class="skill-group-title">Domains</p>
-      <ul class="skill-list">
-        <li>Energy transitions</li>
-        <li>Circular economy</li>
-        <li>Industrial ecology</li>
-        <li>Gas turbines / thermal</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section>
-  <p class="section-label">Contact</p>
-  <p style="color:var(--muted); margin-bottom:20px; font-size:13px;">
-    Open to internship and part-time opportunities in energy, sustainability, and related technical fields.
-  </p>
-  <div class="contact-row">
-    <a class="contact-link" href="mailto:salimoali2026@gmail.com">salimoali2026@gmail.com</a>
-    <a class="contact-link" href="https://github.com/salimoali" target="_blank">github.com/salimoali</a>
-    <a class="contact-link" href="https://www.linkedin.com/in/salimoali" target="_blank">LinkedIn</a>
-  </div>
-</section>
-
-<footer>
-  <p>Salih Ali · Rotterdam · 2025</p>
-</footer>
-```
-
-  </div>
-</body>
-</html>
+salimoali2026@gmail.com
+github.com/salimoali
+LinkedIn
+Salih Ali · Rotterdam · 2025
